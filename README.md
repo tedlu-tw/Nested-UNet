@@ -1,4 +1,4 @@
-# Pytorch Implementation of GOLDNet
+# Pytorch Implementation of Nested UNet
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 This repository contains code for an image segmentation model based on Nested UNet (Inculdes UNet).
@@ -7,9 +7,6 @@ This repository contains code for an image segmentation model based on Nested UN
 - PyTorch 1.x
 - Albumentations 0.1.12
 - Pandas 1.x.x
-
-## Installation
-`pip install -r requriements`
 
 ## Training on custom dataset
 Make sure to put the files as the following structure (e.g. the number of classes is 2):
@@ -60,7 +57,7 @@ optional arguments:
   --name NAME           model name: (default: arch+timestamp)
   --epochs N            number of total epochs to run
   -b N, --batch_size N  mini-batch size (default: 16)
-  --arch ARCH, -a ARCH  model architecture: GOLDNet (default: GOLDNet)
+  --arch ARCH, -a ARCH  model architecture: NestedUNet/UNet (default: UNet)
   --deep_supervision DEEP_SUPERVISION
   --input_channels INPUT_CHANNELS
                         input channels
